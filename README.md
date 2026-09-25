@@ -16,6 +16,23 @@ This repository contains an **atomic, token-efficient, and zero-hallucination kn
 
 ---
 
+## 🤖 100% Agent-Agnostic Design
+
+While we currently use and test this project with **Google Antigravity** in VS Code, this knowledge base is designed from the ground up to be **completely agent-agnostic, model-agnostic, and IDE-independent**. 
+
+Because all rules are written in atomic, standardized Markdown, you can drop them into any AI coding toolchain:
+
+| Tool / Assistant | How to Use |
+| :--- | :--- |
+| **Antigravity** | Link via `skills/godot4-dev` or place in `.agent/rules/godot.md` |
+| **Cursor** | Symlink/copy `RULES_GODOT47.md` as `.cursorrules` or into `.cursor/rules/` |
+| **Claude Code** | Reference `RULES_GODOT47.md` inside your project's `CLAUDE.md` |
+| **Windsurf / Cascade** | Include `RULES_GODOT47.md` in `.windsurfrules` |
+| **Roo Code / Cline / Aider** | Add to custom system prompt or memory instructions |
+| **Local LLMs (Ollama, LM Studio, vLLM)** | Ingest markdown directly into context windows or RAG vector databases |
+
+---
+
 ## 📁 Repository Structure
 
 ```

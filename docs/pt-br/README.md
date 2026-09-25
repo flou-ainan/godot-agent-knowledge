@@ -16,6 +16,23 @@ Este repositório contém uma **base de conhecimento atômica, altamente eficien
 
 ---
 
+## 🤖 Design 100% Agnóstico ao Agente
+
+Embora estejamos usando e testando este projeto atualmente com o **Google Antigravity** no VS Code, esta base de conhecimento foi projetada desde o início para ser **completamente agnóstica a agentes, modelos e IDEs**.
+
+Por ser escrita em arquivos Markdown padronizados e atômicos, você pode integrá-la a qualquer ecossistema de ferramentas de IA:
+
+| Ferramenta / Assistente | Como Utilizar |
+| :--- | :--- |
+| **Antigravity** | Link via `skills/godot4-dev` ou arquivo em `.agent/rules/godot.md` |
+| **Cursor** | Crie um link ou copie `RULES_GODOT47.md` como `.cursorrules` ou na pasta `.cursor/rules/` |
+| **Claude Code** | Referencie `RULES_GODOT47.md` no arquivo `CLAUDE.md` do seu projeto |
+| **Windsurf / Cascade** | Adicione as diretrizes de `RULES_GODOT47.md` no `.windsurfrules` |
+| **Roo Code / Cline / Aider** | Inclua no system prompt customizado ou nas instruções de memória |
+| **Modelos Locais (Ollama, LM Studio, vLLM)** | Ingira os arquivos Markdown diretamente na janela de contexto ou banco vetorial (RAG) |
+
+---
+
 ## 📁 Estrutura do Repositório
 
 ```

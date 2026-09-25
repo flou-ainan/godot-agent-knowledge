@@ -27,6 +27,7 @@ To solve this, we embarked on an effort to distill the official Godot Engine doc
 Our mission is to establish the gold standard for **AI-assisted game development in Godot**:
 * Empower AI agents to write clean, strictly typed, production-ready GDScript 2.0.
 * Maintain a **Scene-First** philosophy where the human developer remains in control of visual parameters in the Godot Editor.
+* Ensure **100% Agent-Agnostic Usability**: while we currently use Google Antigravity in VS Code to test and build this project, the entire knowledge architecture is designed to be universal across any toolchain (Cursor, Claude Code, Windsurf, Copilot, Roo Code, Aider, and local LLMs).
 * Provide an open, vendor-neutral knowledge source that works across any AI tool, IDE, or local LLM.
 
 ---

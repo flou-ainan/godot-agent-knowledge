@@ -27,6 +27,7 @@ Para solucionar esses gargalos, destilamos toda a documentação oficial da Godo
 Nossa meta é estabelecer o padrão de excelência para **desenvolvimento de jogos assistido por IA na Godot**:
 * Capacitar agentes de IA a escrever GDScript 2.0 limpo, estritamente tipado e pronto para produção.
 * Manter a filosofia **Scene-First**, garantindo que o desenvolvedor humano preserve o controle visual no Inspector da Godot.
+* Garantir **Usabilidade 100% Agnóstica a Agentes**: embora usemos atualmente o Google Antigravity no VS Code para criar e testar este projeto, toda a arquitetura de conhecimento foi projetada para ser universal e compatível com qualquer agente ou assistente (Cursor, Claude Code, Windsurf, Copilot, Roo Code, Aider ou LLMs locais).
 * Disponibilizar uma base de conhecimento livre, aberta e agnóstica a fornecedores, compatível com qualquer IDE, LLM local ou ferramenta de IA.
 
 ---
