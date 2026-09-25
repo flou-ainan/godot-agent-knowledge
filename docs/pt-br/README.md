@@ -71,6 +71,9 @@ Por ser escrita em arquivos Markdown padronizados e atômicos, você pode integr
 
 ## 💻 Guia de Configuração e Uso por Sistema Operacional (Linux, macOS, Windows)
 
+> [!TIP]
+> **Usa Linux Mint / Ubuntu / Pop!_OS?** Confira nosso passo a passo completo e detalhado: **[docs/pt-br/ubuntu_linux_godot4_setup.md](./ubuntu_linux_godot4_setup.md)**.
+
 ### 1. Adicionando ao seu Projeto Godot
 
 #### Método A: Integração Direta no Projeto (Recomendado)

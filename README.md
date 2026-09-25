@@ -71,6 +71,9 @@ Because all rules are written in atomic, standardized Markdown, you can drop the
 
 ## 💻 Setup & Usage by OS (Linux, macOS, Windows)
 
+> [!TIP]
+> **Using Linux Mint / Ubuntu / Pop!_OS?** Check our dedicated, in-depth guide: **[docs/ubuntu_linux_godot4_setup.md](./docs/ubuntu_linux_godot4_setup.md)**.
+
 ### 1. Adding to your Godot Project
 
 #### Method A: Direct Project Integration (Recommended)
