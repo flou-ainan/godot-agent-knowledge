@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Open Source](https://img.shields.io/badge/Open_Source-100%25-green.svg)](./LICENSE)
+[🇧🇷 Leia em Português Brasileiro](./docs/pt-br/README.md)
 
 This repository contains an **atomic, token-efficient, and zero-hallucination knowledge base** for **Godot Engine 4.7+** and **GDScript 2.0**, specifically tailored for AI coding assistants (such as Antigravity in VS Code) pairing continuously with a developer running the Godot Editor.
 
@@ -31,6 +32,9 @@ This repository contains an **atomic, token-efficient, and zero-hallucination kn
 │   ├── 06_patterns_and_resources/               # Custom resources (.tres), state machines, event bus
 │   ├── 07_scenes_and_formats/                   # .tscn format 3, safe node injection, procedural scenes
 │   └── 08_testing_and_verification/             # Headless CLI checking and GUT unit testing
+├── docs/
+│   ├── about.md                                 # Project origins, goals, and vision (English)
+│   └── pt-br/                                   # Documentação e README em Português Brasileiro
 └── skills/
     └── godot4-dev/
         └── SKILL.md                             # Plug-and-play Antigravity / Agent Skill
