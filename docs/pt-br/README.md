@@ -86,6 +86,13 @@ Crie um link simbólico da skill para que qualquer workspace ou projeto possa at
   New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.gemini\antigravity\skills\godot4-dev" -Target "$PWD\skills\godot4-dev"
   ```
 
+#### Método C: Regra de Projeto Dedicada (`.agent/rules/godot.md`)
+Crie um arquivo de regras permanente no repositório do seu jogo para que qualquer agente carregue essas instruções automaticamente ao abrir o projeto:
+```bash
+mkdir -p .agent/rules
+cp agent_knowledge_godot47/RULES_GODOT47.md .agent/rules/godot.md
+```
+
 ---
 
 ### 2. Configurando o Co-Desenvolvimento entre Godot Editor & VS Code

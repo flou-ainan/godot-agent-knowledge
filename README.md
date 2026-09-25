@@ -86,6 +86,13 @@ Link the skill directly so any workspace can activate it:
   New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.gemini\antigravity\skills\godot4-dev" -Target "$PWD\skills\godot4-dev"
   ```
 
+#### Method C: Dedicated Project Rule (`.agent/rules/godot.md`)
+Create a persistent rule file in your game repository so any agent automatically loads these rules:
+```bash
+mkdir -p .agent/rules
+cp agent_knowledge_godot47/RULES_GODOT47.md .agent/rules/godot.md
+```
+
 ---
 
 ### 2. Configuring Godot Editor & VS Code Co-Development
