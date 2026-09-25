@@ -42,3 +42,11 @@ This repository contains an **atomic, token-efficient, and zero-hallucination kn
 * **Scene-First Architecture:** Prefers injecting components (`Timer`, `AudioStreamPlayer`, `GPUParticles`, UI) into `.tscn` so the developer can visually tweak sliders and curves in the Godot Inspector.
 * **Context-Aware Node Referencing:** Guides the developer between `%UniqueName`, `$Path`, `@export`, and Groups based on scene requirements.
 * **Reload vs. Resave Safety Protocol:** Mandatory alert when modifying `.tscn` files to prevent data loss in the Godot Editor.
+
+---
+
+## 📖 About & Contributing
+
+* **How this was built & project goals:** Read [docs/about.md](./docs/about.md) for the story behind this project and our vision for AI-assisted Godot development.
+* **Community Contributions:** Contributions, additional production recipes, and anti-pattern reports are warmly welcomed! See [docs/about.md](./docs/about.md) for guidelines on how to contribute.
+
