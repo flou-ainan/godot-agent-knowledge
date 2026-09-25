@@ -1,8 +1,8 @@
 # Godot 4.7 Atomic AI Knowledge Base & Agent Skill
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Open Source](https://img.shields.io/badge/Open_Source-100%25-green.svg)](./LICENSE)
-[🇧🇷 Leia em Português Brasileiro](./docs/pt-br/README.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](./LICENSE)
+[![Open Source](https://img.shields.io/badge/Open_Source-100%25-green.svg?style=for-the-badge)](./LICENSE)
+[![Leia em Português](https://img.shields.io/badge/🇧🇷_Leia_em-Português_Brasileiro-009c3b?style=for-the-badge)](./docs/pt-br/README.md)
 
 This repository contains an **atomic, token-efficient, and zero-hallucination knowledge base** for **Godot Engine 4.7+** and **GDScript 2.0**, specifically tailored for AI coding assistants (such as Antigravity in VS Code) pairing continuously with a developer running the Godot Editor.
 
