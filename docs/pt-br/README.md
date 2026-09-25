@@ -4,7 +4,7 @@
 [![Código Aberto](https://img.shields.io/badge/Código_Aberto-100%25-green.svg?style=for-the-badge)](../../LICENSE)
 [![Read in English](https://img.shields.io/badge/🇺🇸_Read_in-English-2563eb?style=for-the-badge)](../../README.md)
 
-Este repositório contém uma **base de conhecimento atômica, densa em tokens e à prova de alucinações** para a **Godot Engine 4.7+** e **GDScript 2.0**, projetada especificamente para assistentes de código com IA (como o Antigravity no VS Code) trabalhando lado a lado com um desenvolvedor com o editor da Godot aberto.
+Este repositório contém uma **base de conhecimento atômica, altamente eficiente em tokens e à prova de alucinações** para a **Godot Engine 4.7+** e **GDScript 2.0**, projetada especificamente para assistentes de código com IA (como o Antigravity no VS Code) trabalhando lado a lado com um desenvolvedor com o editor da Godot aberto.
 
 ---
 
