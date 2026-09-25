@@ -52,6 +52,66 @@ Este repositório contém uma **base de conhecimento atômica, altamente eficien
 
 ---
 
+## 💻 Guia de Configuração e Uso por Sistema Operacional (Linux, macOS, Windows)
+
+### 1. Adicionando ao seu Projeto Godot
+
+#### Método A: Integração Direta no Projeto (Recomendado)
+Copie as regras atômicas e a base de conhecimento para a raiz do seu projeto de jogo:
+* **Linux (Mint / Ubuntu / Debian / Fedora / Arch):**
+  ```bash
+  cp -r agent_knowledge_godot47/ /caminho/para/meu-projeto-godot/
+  cp agent_knowledge_godot47/RULES_GODOT47.md /caminho/para/meu-projeto-godot/
+  ```
+* **macOS:**
+  ```bash
+  cp -r agent_knowledge_godot47/ /Users/<usuario>/meu-projeto-godot/
+  cp agent_knowledge_godot47/RULES_GODOT47.md /Users/<usuario>/meu-projeto-godot/
+  ```
+* **Windows (PowerShell):**
+  ```powershell
+  Copy-Item -Recurse agent_knowledge_godot47 C:\Projetos\MeuProjetoGodot\
+  Copy-Item agent_knowledge_godot47\RULES_GODOT47.md C:\Projetos\MeuProjetoGodot\
+  ```
+
+#### Método B: Skill Global do Agente Antigravity
+Crie um link simbólico da skill para que qualquer workspace ou projeto possa ativá-la:
+* **Linux / macOS:**
+  ```bash
+  mkdir -p ~/.gemini/antigravity/skills/
+  ln -s "$(pwd)/skills/godot4-dev" ~/.gemini/antigravity/skills/godot4-dev
+  ```
+* **Windows (Execute o PowerShell como Administrador):**
+  ```powershell
+  New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.gemini\antigravity\skills\godot4-dev" -Target "$PWD\skills\godot4-dev"
+  ```
+
+---
+
+### 2. Configurando o Co-Desenvolvimento entre Godot Editor & VS Code
+
+Para habilitar a edição sincronizada em duas vias entre o editor visual da Godot e o VS Code:
+
+1. Abra a Godot $\rightarrow$ **Editor** $\rightarrow$ **Configurações do Editor** $\rightarrow$ **Editor de Texto** $\rightarrow$ **Externo**:
+   * Marque: **Usar Editor Externo** = `Ligado`
+   * Preencha o **Caminho do Executável** de acordo com seu SO:
+     * **Linux Mint / Ubuntu / Debian (.deb ou apt):** `/usr/bin/code`
+     * **Linux (Flatpak):** `/var/lib/flatpak/exports/bin/com.visualstudio.code`
+     * **macOS:** `/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code`
+     * **Windows:** `C:\Users\<Usuario>\AppData\Local\Programs\Microsoft VS Code\Code.exe`
+   * Defina os **Argumentos do Executável**: `{project} --goto {file}:{line}:{col}`
+
+2. Ative o Language Server (LSP) na Godot:
+   * **Configurações do Editor** $\rightarrow$ **Rede** $\rightarrow$ **Language Server**:
+     * `Porta Remota`: `6005`
+     * `Host Remoto`: `127.0.0.1`
+
+3. No VS Code:
+   * Instale a extensão oficial **Godot Tools** (`geequlim.godot-tools`).
+   * Com o editor da Godot aberto, o VS Code se conectará automaticamente à porta `6005` para fornecer autocompletar e diagnósticos em tempo real.
+
+---
+
 ## 📖 Sobre & Contribuições
 
 * **Como este projeto foi criado e objetivos:** Leia [docs/pt-br/about.md](./about.md) para conhecer a história do projeto e nossa visão para o desenvolvimento na Godot com IA.

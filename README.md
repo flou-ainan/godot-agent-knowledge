@@ -52,6 +52,66 @@ This repository contains an **atomic, token-efficient, and zero-hallucination kn
 
 ---
 
+## 💻 Setup & Usage by OS (Linux, macOS, Windows)
+
+### 1. Adding to your Godot Project
+
+#### Method A: Direct Project Integration (Recommended)
+Copy the atomic rules and knowledge into your project root:
+* **Linux (Mint / Ubuntu / Debian / Fedora / Arch):**
+  ```bash
+  cp -r agent_knowledge_godot47/ /path/to/my-godot-project/
+  cp agent_knowledge_godot47/RULES_GODOT47.md /path/to/my-godot-project/
+  ```
+* **macOS:**
+  ```bash
+  cp -r agent_knowledge_godot47/ /Users/<user>/my-godot-project/
+  cp agent_knowledge_godot47/RULES_GODOT47.md /Users/<user>/my-godot-project/
+  ```
+* **Windows (PowerShell):**
+  ```powershell
+  Copy-Item -Recurse agent_knowledge_godot47 C:\Projects\MyGodotProject\
+  Copy-Item agent_knowledge_godot47\RULES_GODOT47.md C:\Projects\MyGodotProject\
+  ```
+
+#### Method B: Global Antigravity Agent Skill
+Link the skill directly so any workspace can activate it:
+* **Linux / macOS:**
+  ```bash
+  mkdir -p ~/.gemini/antigravity/skills/
+  ln -s "$(pwd)/skills/godot4-dev" ~/.gemini/antigravity/skills/godot4-dev
+  ```
+* **Windows (Run PowerShell as Administrator):**
+  ```powershell
+  New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.gemini\antigravity\skills\godot4-dev" -Target "$PWD\skills\godot4-dev"
+  ```
+
+---
+
+### 2. Configuring Godot Editor & VS Code Co-Development
+
+To enable seamless two-way editing between the Godot Editor and VS Code:
+
+1. Open Godot $\rightarrow$ **Editor** $\rightarrow$ **Editor Settings** $\rightarrow$ **Text Editor** $\rightarrow$ **External**:
+   * Check: **Use External Editor** = `On`
+   * Set **Exec Path** according to your OS:
+     * **Linux Mint / Ubuntu / Debian (.deb / apt):** `/usr/bin/code`
+     * **Linux (Flatpak):** `/var/lib/flatpak/exports/bin/com.visualstudio.code`
+     * **macOS:** `/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code`
+     * **Windows:** `C:\Users\<User>\AppData\Local\Programs\Microsoft VS Code\Code.exe`
+   * Set **Exec Flags**: `{project} --goto {file}:{line}:{col}`
+
+2. Enable the Language Server in Godot:
+   * **Editor Settings** $\rightarrow$ **Network** $\rightarrow$ **Language Server**:
+     * `Remote Port`: `6005`
+     * `Remote Host`: `127.0.0.1`
+
+3. In VS Code:
+   * Install the official **Godot Tools** extension (`geequlim.godot-tools`).
+   * When Godot is open, VS Code will automatically connect to port `6005` for real-time autocompletion and diagnostics.
+
+---
+
 ## 📖 About & Contributing
 
 * **How this was built & project goals:** Read [docs/about.md](./docs/about.md) for the story behind this project and our vision for AI-assisted Godot development.
