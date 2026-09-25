@@ -63,8 +63,7 @@ Place these in `.vscode/` at the root of your Godot project.
   "godotTools.editorPath.godot4": "godot",
   "godotTools.lsp.serverPort": 6005,
   "godotTools.lsp.serverHost": "127.0.0.1",
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
+  "files.autoSave": "off",
   "files.exclude": {
     "**/.git": true,
     "**/.godot": false
